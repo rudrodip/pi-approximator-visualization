@@ -41,6 +41,10 @@ main {
   align-items: center;
 }
 
+canvas {
+  margin: 2rem;
+}
+
 .button {
   align-items: center;
   appearance: none;
@@ -98,4 +102,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#pi-val{
+  text-align: center;
+}
+
+#three {
+  color: rgb(218, 0, 55);
+}
+
+#dot {
+  color: aqua;
+}
+
+#decimal {
+  color: rgb(0, 218, 0);
 }

@@ -18,33 +18,16 @@
   </head>
   <body>
     <div class="input-section">
-      <div class="side_length">
-        <p class="input-title">Side length of square</p>
-        <div class="range-container">
-          <input
-            type="range"
-            min="0"
-            max="10000"
-            value="1000"
-            class="range blue"
-            id="side_length_range"
-            onchange="updateSideLength()"
-          />
-          <p id="side_length" class="range-value">1000</p>
-        </div>
-      </div>
-
       <div class="iteration">
-        <p class="input-title">Number of iteration</p>
+        <p class="input-title">Number of guess</p>
         <div class="range-container">
           <input
             type="range"
-            min="0"
-            max="100000"
+            min="10"
+            max="20000"
             value="1000"
             class="range blue"
             id="iteration_range"
-            onchange="updateIteration()"
           />
           <p id="iteration" class="range-value">1000</p>
         </div>
@@ -53,10 +36,21 @@
 
     <main>
       <canvas id="canvas" width="500" height="500" style="border:1px solid #ffffff;"></canvas>
+      <canvas id="graph" width="800" height="500" style="border:1px solid #ffffff;"></canvas>
     </main>
 
     <div class="run">
-      <button class="button" id="btn" onclick="runSimulation()">Run</button>
+      <button class="button" id="btn" onclick="runSimulation()">Run Iteratively</button>
+      <button class="button" id="btn-2" onclick="runSimulationOnce()">Run Once</button>
+    </div>
+
+    <div class="result">
+      <p id="pi-val">
+        <span id="pi-val-text-before">Approx. value of Pi: </span>
+        <span id="three">3</span>
+        <span id="dot">.</span>
+        <span id="decimal">......</span>
+      </p>
     </div>
 
     <script type="module">
