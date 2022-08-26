@@ -1,3 +1,3 @@
-#This is a simple Pi approximation visualizer
+## A simple Pi approximation visualizer
 
 it uses basic geometry and probablity to approximate value of Pi
