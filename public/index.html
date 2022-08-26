@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pi-3.14159265358979</title>
+    <link rel="shortcut icon" href="pi.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="range.css" />
+  </head>
+  <body>
+    <div class="input-section">
+      <div class="side_length">
+        <p class="input-title">Side length of square</p>
+        <div class="range-container">
+          <input
+            type="range"
+            min="0"
+            max="10000"
+            value="1000"
+            class="range blue"
+            id="side_length_range"
+            onchange="updateSideLength()"
+          />
+          <p id="side_length" class="range-value">1000</p>
+        </div>
+      </div>
+
+      <div class="iteration">
+        <p class="input-title">Number of iteration</p>
+        <div class="range-container">
+          <input
+            type="range"
+            min="0"
+            max="100000"
+            value="1000"
+            class="range blue"
+            id="iteration_range"
+            onchange="updateIteration()"
+          />
+          <p id="iteration" class="range-value">1000</p>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <canvas id="canvas" width="500" height="500" style="border:1px solid #ffffff;"></canvas>
+    </main>
+
+    <div class="run">
+      <button class="button" id="btn" onclick="runSimulation()">Run</button>
+    </div>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyApG0wy3r715GvdFTWisK1q7UXtYncR54E",
+        authDomain: "pi-approx.firebaseapp.com",
+        projectId: "pi-approx",
+        storageBucket: "pi-approx.appspot.com",
+        messagingSenderId: "474463531758",
+        appId: "1:474463531758:web:d556f77ed673a6cfdc39ff",
+        measurementId: "G-NKSPTSX7KH",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
