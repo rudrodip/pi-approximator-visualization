@@ -20,8 +20,8 @@ if (window.innerWidth > 750) {
     pi_canvas_scale = 0.3
     graph_canvas_scale = 0.5
 } else {
-    pi_canvas_scale = 0.5
-    graph_canvas_scale = 0.7
+    pi_canvas_scale = 0.8
+    graph_canvas_scale = 0.8
 }
 
 // variables for algorithm
