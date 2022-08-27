@@ -39,6 +39,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 canvas {
@@ -109,13 +110,13 @@ canvas {
 }
 
 #three {
-  color: rgb(218, 0, 55);
+  color: rgb(0, 218, 127);
 }
 
 #dot {
-  color: aqua;
+  color: rgb(255, 255, 255);
 }
 
 #decimal {
-  color: rgb(0, 218, 0);
+  color: rgb(4, 181, 252);
 }

@@ -24,24 +24,24 @@
           <input
             type="range"
             min="10"
-            max="20000"
-            value="1000"
+            max="5000"
+            value="10"
             class="range blue"
             id="iteration_range"
           />
-          <p id="iteration" class="range-value">1000</p>
+          <p id="iteration" class="range-value">10</p>
         </div>
       </div>
     </div>
 
     <main>
-      <canvas id="canvas" width="500" height="500" style="border:1px solid #ffffff;"></canvas>
-      <canvas id="graph" width="800" height="500" style="border:1px solid #ffffff;"></canvas>
+      <canvas id="canvas" style="border:1px solid #ffffff;"></canvas>
+      <canvas id="graph" style="border:1px solid #ffffff;"></canvas>
     </main>
 
     <div class="run">
-      <button class="button" id="btn" onclick="runSimulation()">Run Iteratively</button>
-      <button class="button" id="btn-2" onclick="runSimulationOnce()">Run Once</button>
+      <button class="button" id="btn" onclick="runSimulation()">Run</button>
+      <button class="button" id="btn" onclick="stopSimulation()">Stop</button>
     </div>
 
     <div class="result">
