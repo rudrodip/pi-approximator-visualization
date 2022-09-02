@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 2rem;
+  margin: 0rem;
   padding: 1rem;
   justify-content: center;
 }
@@ -119,4 +119,11 @@ canvas {
 
 #decimal {
   color: rgb(4, 181, 252);
+}
+
+.result{
+  padding: 1rem;
+  margin: 0.5rem;
+  font: medium;
+  font-size: 2rem;
 }
